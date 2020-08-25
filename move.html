@@ -21,7 +21,13 @@
         function mainloop() {
             colorRect(0, 0, canvas.width, canvas.height, 'black'); // bg
 
-            colorRect(0, 0, 20, 20, 'yellow');
+            colorRect(playerXpos, playerYpos, PLAYER_SIZE, PLAYER_SIZE, 'yellow');
+
+            playerMove();
+        } // end func
+
+        function playerMove() {
+            playerXspeed += playerXspeed;
         }
 
         function colorRect(x, y, w, h, c) {
